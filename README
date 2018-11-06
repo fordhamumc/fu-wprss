@@ -1,0 +1,19 @@
+=== FU WP RSS Edits ===
+Contributors: michaeldfoley
+Tags: rss
+Requires at least: 3.0.1
+Tested up to: 4.9.8
+Stable tag: 0.1.0
+License: GPLv3 or later
+License URI: https://www.gnu.org/licenses/gpl-3.0.txt
+
+Edits to the WP RSS Aggregator Plugin
+
+== Description ==
+
+Edits to the WP RSS Aggregator Plugin
+
+== Installation ==
+
+1. Upload `wp-plugin-name.php` to the `/wp-content/plugins/` directory
+2. Activate the plugin through the 'Plugins' menu in WordPress

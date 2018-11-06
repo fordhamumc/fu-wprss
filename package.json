@@ -1,0 +1,36 @@
+{
+  "name": "fu_wprss",
+  "description": "Edits to the WP RSS Aggregator Plugin.",
+  "version": "0.1.0",
+  "keywords": [
+    "wordpress",
+    "rss"
+  ],
+  "author": {
+    "name": "Michael Foley",
+    "web": "https://michaeldfoley.com"
+  },
+  "bugs": {
+    "web": "https://github.com/fordhamumc/fu-wprss/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:fordhamumc/fu-wprss.git"
+  },
+  "license": "GPL-3.0-or-later",
+  "devDependencies": {
+    "node-wp-i18n": "^1.1.1",
+    "npm-watch": "^0.3.0",
+    "uglify-js": "^3.3.22"
+  },
+  "watch": {
+    "minify": "inc/admin/js/src/*.js"
+  },
+  "scripts": {
+    "minify": "uglifyjs src/admin/js/src/*.js --output src/admin/js/fu-wprss-admin.min.js --compress --mangle --source-map",
+    "localize": "wpi18n makepot --domain-path /languages --main-file fu-wprss.php --type wp-plugin --include src/.*",
+    "watch": "npm-watch",
+    "build": "npm run minify && npm run localize",
+    "dev": "npm run watch"
+  }
+}
