@@ -199,7 +199,7 @@ class Admin {
      */
     public function filter_image_urls($post_id) {
 	    $content = get_post($post_id)->post_content;
-        $content = preg_replace('/"(https?:\/\/fordhamsports\.com\/).*?image_path=\/?(.*?.(?:gif|jpe?g|png)).*?"/i','$1$2', $content);
+        $content = preg_replace('/"(https?:\/\/(?:www.)?fordhamsports\.com\/).*?image_path=\/?(.*?.(?:gif|jpe?g|png)).*?"/i','"$1$2"', $content);
 	    wp_update_post(array(
 	        'ID'            => $post_id,
 	        'post_content'  => $content
