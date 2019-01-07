@@ -7,7 +7,7 @@
  * Plugin Name:       Fordham WP RSS Aggregator Edits
  * Plugin URI:        http://news.fordham.edu
  * Description:       Edits to the WP RSS Aggregator Plugin.
- * Version:           0.1.0
+ * Version:           0.1.1
  * Author:            Michael Foley
  * Author URI:        https://michaeldfoley.com
  * License:           GPLv3
@@ -35,7 +35,7 @@ define( NS . 'PLUGIN_NAME', 'fu_wprss' );
 
 define( NS . 'PLUGIN_TITLE', 'Fordham WP RSS Aggregator Edits' );
 
-define( NS . 'PLUGIN_VERSION', '0.1.0' );
+define( NS . 'PLUGIN_VERSION', '0.1.1' );
 
 define( NS . 'WPRSS_MIN_VERSION', '4.0.0' );
 

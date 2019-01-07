@@ -322,4 +322,18 @@ EOT;
             delete_post_meta($post_id, $field, $old);
         }
     }
+
+
+    /**
+     * Turn off Yoast canonical urls for WPRSS articles
+     *
+     * @param       string    $url       The Yoast canonical url.
+     * @since       0.1.1
+     * @return bool|string
+     */
+
+    public function filter_canonical_urls( $url ) {
+        if ( get_post_meta(get_the_ID(), 'wprss_feed_id', true) ) return false;
+        return $url;
+    }
 }

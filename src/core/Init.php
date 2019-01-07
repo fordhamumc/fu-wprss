@@ -111,6 +111,7 @@ class Init {
         $this->loader->add_action( 'add_meta_boxes', $admin, 'add_new_post_alert_meta_box');
         $this->loader->add_action( 'wprss_ftp_converter_inserted_post', $admin, 'filter_image_urls', 5 );
         $this->loader->add_action( 'wprss_ftp_converter_inserted_post', $admin, 'alert_users' );
+        $this->loader->add_filter( 'wpseo_canonical', $admin, 'filter_canonical_urls' );
 	}
 
 	/**
